@@ -26,14 +26,3 @@ let validateForms = function (selector, rules, successModal, yaGoal) {
 }
 
 validateForms('.feedback__form', { name: { required: true, minLength: 3, maxLength: 10 }, tel: { required: true, minLength: 17 } }, 'thanks-popup', 'send goal');
-
-
-/*============TEXTAREA=================================================================*/
-
-$('textarea').on('input', function () {
-   $(this)
-      .width(50)
-      .height(50)
-      .width(this.scrollWidth)
-      .height(this.scrollHeight);
-});
