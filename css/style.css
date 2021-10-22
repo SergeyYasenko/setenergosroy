@@ -783,7 +783,7 @@ h6 {
   .header__menu::before {
     content: "";
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     left: 0;
     top: 0;
     height: 100%;
@@ -801,7 +801,7 @@ h6 {
   }
   .menu__row {
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     right: 0;
     top: 0;
     height: 100%;
@@ -842,7 +842,7 @@ h6 {
   }
   .menu__burger .menu__line, .menu__burger .menu__line::before {
     display: block;
-    z-index: 3;
+    z-index: 6;
   }
   .menu__nav-burger {
     display: block;
