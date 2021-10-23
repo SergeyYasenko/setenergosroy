@@ -387,7 +387,6 @@ h6 {
   height: 70px;
   border-radius: 50%;
   background-color: #522a77;
-  box-shadow: 4px 5px 15px rgba(155, 81, 224, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -532,6 +531,12 @@ h6 {
   font-size: 18px;
   line-height: 123.6%;
   color: #181818;
+  transition: all 0.3s ease;
+}
+.info__text:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #4f2972;
 }
 
 /*============BLOCK__7=================================================================*/
@@ -1091,6 +1096,7 @@ h6 {
 
   .cooperation__button {
     margin: 0px 0px 100px 0px;
+    padding: 20px 27px;
   }
 
   .cooperation__title {
@@ -1102,7 +1108,8 @@ h6 {
   }
 
   .cooperation__button {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 60px 0px;
+    width: 100%;
   }
 
   .aboutcompany__block {
@@ -1117,7 +1124,7 @@ h6 {
   }
 
   .working__title {
-    padding: 100px 0px 82px 15px;
+    padding: 100px 0px 50px 15px;
   }
 
   .benefits__title {
@@ -1174,6 +1181,15 @@ h6 {
     flex: 1 1 auto;
     margin: 0px 0px 51px 0px;
   }
+
+  .info__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 123.6%;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #4F2972;
+  }
 }
 /*============MEDIA-MAX-560px--=================================================================*/
 @media screen and (max-width: 560px) {
@@ -1186,7 +1202,7 @@ h6 {
   }
 
   .aboutcompany__block {
-    padding: 30px 0px 10px 0px;
+    padding: 60px 0px 10px 0px;
   }
 
   .block__aboutcompany {

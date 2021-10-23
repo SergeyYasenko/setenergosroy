@@ -20,48 +20,52 @@
          <div class="header">
             <div class="header__conteiner conteiner">
                <div class="header__body">
-                  <div class="header__row">
-                     <li class="header__row-logo">
-                        <a class="header__logo">
-                           <img src="img/header-ico/header-ico.png" class="header__ico" alt="header-img">
-                           <div class="ico__title">СетьЭнергоСтрой</div>
-                        </a>
-                     </li>
-                     <div class="menu__burger">
-                        <div class="menu__line"></div>
-                     </div>
-                     <div class="header__menu menu">
-                        <div class="menu__row">
-                           <nav class="menu__nav nav">
-                              <ul class="menu__list">
-                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
-                                 </li>
-                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">С кем работаем</a>
-                                 </li>
-                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Преимущества</a>
-                                 </li>
-                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Услуги</a>
-                                 </li>
-                              </ul>
-                           </nav>
-                           <div class="menu__nav-burger burger-nav">
-                              <div class="burger-nav__text">Вы можете связаться с нами по телефону или почте
+                  <nav class="header__navigation">
+                     <div class="header__row">
+                        <li class="header__row-logo">
+                           <a class="header__logo">
+                              <img src="img/header-ico/header-ico.png" class="header__ico" alt="header-img">
+                              <div class="ico__title">СетьЭнергоСтрой</div>
+                           </a>
+                        </li>
+                        <div class="menu__burger">
+                           <div class="menu__line"></div>
+                        </div>
+                        <div class="header__menu menu">
+                           <div class="menu__row">
+                              <nav class="menu__nav nav">
+                                 <ul class="menu__list">
+                                    <li class="menu__item">
+                                       <a data-goto=".aboutcompany__title" href="#" class="menu__link nav">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                       <a data-goto=".working__title" href="#" class="menu__link nav">С кем работаем</a>
+                                    </li>
+                                    <li class="menu__item">
+                                       <a data-goto=".benefits__title" href="#" class="menu__link nav">Преимущества</a>
+                                    </li>
+                                    <li class="menu__item">
+                                       <a data-goto=".design__title" href="#" class="menu__link nav">Услуги</a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                              <div class="menu__nav-burger burger-nav">
+                                 <div class="burger-nav__text">Вы можете связаться с нами по телефону или почте
+                                 </div>
+                                 <span class="burger-nav__tel"><a href="tel:+74995509507"
+                                       class="burger__tel-link tel">+7
+                                       (499)
+                                       550-95-07</a></span>
+                                 <span><a href="mailto:komp.el@bk.ru"
+                                       class="burger-nav__mail mail">komp.el@bk.ru</a></span>
                               </div>
-                              <span class="burger-nav__tel"><a href="tel+74995509507" class="burger__tel-link tel">+7
-                                    (499)
-                                    550-95-07</a></span>
-                              <span><a href="#" class="burger-nav__mail mail">komp.el@bk.ru</a></span>
                            </div>
                         </div>
+                        <div class="header__tel">
+                           <span><a href="tel:+74995509507" class="tel__link tel">+7 (499) 550-95-07</a></span>
+                        </div>
                      </div>
-                     <div class="header__tel">
-                        <span><a href="tel+74995509507" class="tel__link tel">+7 (499) 550-95-07</a></span>
-                     </div>
-                  </div>
+                  </nav>
                </div>
             </div>
          </div>
@@ -75,11 +79,11 @@
                               электротехники, светотехнической продукции
                            </div>
                            <img src="img/main/lightning.png" alt="lightning.png">
-                           <span><a href="tel+74995509507" class="cooperation__tel tel">+7 (499) 550-95-07</a></span>
+                           <span><a href="tel:+74995509507" class="cooperation__tel tel">+7 (499) 550-95-07</a></span>
                            <div class="cooperation__text">Работаем напрямую с изготовителями без посредников, поэтому
                               готовы предоставить индивидуальные условия каждому клиенту
                            </div>
-                           <div class="cooperation__button">Обсудить сотрудничество</div>
+                           <a data-goto=".feedback__title" href="#" class="cooperation__button nav">Обсудить сотрудничество</a>
                         </div>
                      </div>
                   </div>
@@ -241,22 +245,22 @@
                            <div class="contacts__img"><img src="img/main-ico/mail.svg" alt="mail.svg"></div>
                            <div class="info__block-text">
                               <div class="info__title">Наш Email</div>
-                              <div class="info__text">komp.el@bk.ru</div>
+                              <<a href="mailto:komp.el@bk.ru" class="info__text">komp.el@bk.ru</a>
                            </div>
                         </div>
                         <div class="contacts__info info__contacts">
                            <div class="contacts__img"><img src="img/main-ico/phone-call.svg" alt="phone-call.svg"></div>
                            <div class="info__block-text">
                               <div class="info__title">Телефон</div>
-                              <div class="info__text">(8) 499 550 95 07</div>
+                              <a href="tel:+74995509507" class="info__text">(8) 499 550 95 07</a>
                            </div>
                         </div>
                         <div class="contacts__info info__contacts">
                            <div class="contacts__img"><img src="img/main-ico/map-pin.svg" alt="map-pin.svg"></div>
                            <div class="info__block-text">
                               <div class="info__title">Адрес</div>
-                              <div class="info__text">140080, Московская обл, Промзона Тураево тер, строение 16, офис
-                                 309</div>
+                              <a href="https://www.google.com/maps/search/140080,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB,+%D0%9F%D1%80%D0%BE%D0%BC%D0%B7%D0%BE%D0%BD%D0%B0+%D0%A2%D1%83%D1%80%D0%B0%D0%B5%D0%B2%D0%BE+%D1%82%D0%B5%D1%80,+%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5+16,+%D0%BE%D1%84%D0%B8%D1%81++++++++++++++++++++++++++++++++++309/@55.5616227,37.9403014,17z/data=!3m1!4b1?hl=ru-RU" class="info__text">140080, Московская обл, Промзона Тураево тер, строение 16, офис
+                                 309</a>
                            </div>
                         </div>
                      </div>
@@ -327,6 +331,7 @@
          </footer>
       </div>
    </head>
+   <script src="js/anchor.js"></script>
    <script src="js/hamburger.js"></script>
    <script src="js/mask-tel.js"></script>
 </body>
