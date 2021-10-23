@@ -694,14 +694,14 @@ h6 {
   position: absolute;
   right: 0;
   top: -60%;
-  background: url("../img/footer-ico/author.png") center no-repeat;
+  background: url("../img/footer-ico/author.svg") center no-repeat;
   width: 51px;
   height: 51px;
   transition: all 0.3s ease;
 }
 .author__link:hover::before {
   opacity: 1;
-  background: url("../img/footer-ico/author_hover.png") center no-repeat;
+  background: url("../img/footer-ico/author_hover.svg") center no-repeat;
 }
 
 .footer__menu-list {
@@ -1135,6 +1135,10 @@ h6 {
     padding: 0px 0px 120px 0px;
   }
 
+  .design-block-text {
+    padding: 15px;
+  }
+
   .feedback__body {
     padding: 0;
   }
@@ -1160,7 +1164,6 @@ h6 {
   .benefits__text {
     width: 100%;
     flex: 1 1 auto;
-    font-size: 14px;
   }
 
   .benefits__sub-title {
@@ -1188,7 +1191,7 @@ h6 {
     line-height: 123.6%;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
-    color: #4F2972;
+    color: #4f2972;
   }
 }
 /*============MEDIA-MAX-560px--=================================================================*/

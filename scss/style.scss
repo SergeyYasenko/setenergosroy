@@ -801,7 +801,7 @@
       position: absolute;
       right: 0;
       top: -60%;
-      background: url("../img/footer-ico/author.png") center no-repeat;
+      background: url("../img/footer-ico/author.svg") center no-repeat;
       width: 51px;
       height: 51px;
       transition: all 0.3s ease;
@@ -809,7 +809,7 @@
 
    &__link:hover::before {
       opacity: 1;
-      background: url("../img/footer-ico/author_hover.png") center no-repeat;
+      background: url("../img/footer-ico/author_hover.svg") center no-repeat;
    }
 }
 
@@ -1312,6 +1312,10 @@
       padding: 0px 0px 120px 0px;
    }
 
+   .design-block-text {
+      padding: 15px;
+   }
+
    .feedback__body {
       padding: 0;
    }
@@ -1337,7 +1341,6 @@
    .benefits__text {
       width: 100%;
       flex: 1 1 auto;
-      font-size: 14px;
    }
 
    .benefits__sub-title {
@@ -1364,7 +1367,7 @@
       font-size: 18px;
       line-height: 123.6%;
       text-decoration-line: underline;
-      color: #4F2972;
+      color: #4f2972;
    }
 }
 
