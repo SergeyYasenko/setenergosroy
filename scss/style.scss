@@ -5,6 +5,7 @@
    overflow: hidden;
    display: flex;
    flex-direction: column;
+   background-color: #f9f9f9;
 }
 
 .conteiner {
@@ -17,6 +18,9 @@
 
 .header {
    background-color: #f9f9f9;
+   position: fixed;
+   width: 100%;
+   z-index: 40;
    &__conteiner {
    }
 
@@ -797,11 +801,19 @@
    }
 
    &__link::before {
-      content: "";
+      content: "yasenko web";
+      text-transform: uppercase;
+      font-size: 8px;
+      line-height: 99.9%;
+      font-weight: 700;
+      color: #fafafa;
+      text-align: center;
+      display: flex;
+      align-items: center;
       position: absolute;
       right: 0;
       top: -60%;
-      background: url("../img/footer-ico/author.svg") center no-repeat;
+      background: url("../img/footer-ico/author.png") center/ 51px 51px no-repeat;
       width: 51px;
       height: 51px;
       transition: all 0.3s ease;
@@ -809,7 +821,7 @@
 
    &__link:hover::before {
       opacity: 1;
-      background: url("../img/footer-ico/author_hover.svg") center no-repeat;
+      background: url("../img/footer-ico/author_hover.svg") center/ 51px 51px no-repeat;
    }
 }
 
@@ -1010,6 +1022,7 @@
 
       &__nav-burger {
          display: block;
+         padding: 0px 0px 72px 0px;
       }
    }
 
@@ -1036,7 +1049,6 @@
          font-size: 24px;
          line-height: 100.85%;
          font-weight: 600;
-         padding: 0px 0px 72px 0px;
       }
    }
 
@@ -1239,7 +1251,7 @@
    }
 
    .header {
-      background-color: #fff;
+      position: static;
    }
 
    .header__tel {
