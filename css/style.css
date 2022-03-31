@@ -587,6 +587,7 @@ h6 {
 .feedback__column {
   display: flex;
   padding: 0px 0px 29px 0px;
+  position: relative;
 }
 .feedback__name {
   width: 243px;
@@ -654,6 +655,17 @@ h6 {
 .feedback__btn:hover {
   background-color: #fff;
   color: #242526;
+}
+
+.js-validate-error-label {
+  max-width: 250px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.error {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /*============FOOTER=================================================================*/
@@ -970,6 +982,10 @@ h6 {
     padding: 0px 69px 0px 0px;
   }
 
+  .author__link:hover {
+    display: none;
+  }
+
   .cooperation__block > img {
     margin: 0px 0px 34px 0px;
     width: 243px;
@@ -1047,24 +1063,31 @@ h6 {
     width: 100%;
     flex: 1 1 auto;
     margin: 0px 0px 15px 0px;
+    order: 2;
   }
 
   .feedback__tel {
     width: 100%;
     flex: 1 1 auto;
     margin: 0px 0px 15px 0px;
+    order: 4;
   }
 
   .feedback__mail {
     width: 100%;
     flex: 1 1 auto;
     margin: 0px 0px 15px 0px;
+    order: 6;
   }
 
   .feedback__form-text {
     width: 100%;
     flex: 1 1 auto;
     resize: inherit;
+  }
+
+  .error {
+    flex-direction: column;
   }
 }
 /*============MEDIA-MAX-650px--=================================================================*/

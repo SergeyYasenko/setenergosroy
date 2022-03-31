@@ -602,6 +602,7 @@
       color: #4f2972;
    }
 }
+
 /*============BLOCK__7=================================================================*/
 
 .main {
@@ -610,6 +611,7 @@
       position: relative;
    }
 }
+
 .feedback {
    &__body {
    }
@@ -660,6 +662,7 @@
    &__column {
       display: flex;
       padding: 0px 0px 29px 0px;
+      position: relative;
    }
 
    &__name {
@@ -747,7 +750,19 @@
 .btn {
 }
 
+.js-validate-error-label {
+   max-width: 250px;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.error {
+   display: flex;
+   flex-direction: column-reverse;
+}
+
 /*============FOOTER=================================================================*/
+
 .footer {
    background-color: #e5e5e5;
    &__conteiner {
@@ -1146,6 +1161,10 @@
       padding: 0px 69px 0px 0px;
    }
 
+   .author__link:hover {
+      display: none;
+   }
+
    .cooperation__block > img {
       margin: 0px 0px 34px 0px;
       width: 243px;
@@ -1223,24 +1242,31 @@
       width: 100%;
       flex: 1 1 auto;
       margin: 0px 0px 15px 0px;
+      order: 2;
    }
 
    .feedback__tel {
       width: 100%;
       flex: 1 1 auto;
       margin: 0px 0px 15px 0px;
+      order: 4;
    }
 
    .feedback__mail {
       width: 100%;
       flex: 1 1 auto;
       margin: 0px 0px 15px 0px;
+      order: 6;
    }
 
    .feedback__form-text {
       width: 100%;
       flex: 1 1 auto;
       resize: inherit;
+   }
+
+   .error {
+      flex-direction: column;
    }
 }
 
